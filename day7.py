@@ -110,10 +110,10 @@ def main(file_path):
     print(sum([folder_size for folder_size in folder_sizes.values() if folder_size <= 100000]))
 
     # Part 2
-    TOTAL_SPACE = 70000000
-    NEEDED_SPACE = 30000000
-    UNUSED_SPACE = TOTAL_SPACE - folder_sizes['root']
-    print(min([size for size in folder_sizes.values()  if UNUSED_SPACE + size >= NEEDED_SPACE]))
+    total_space = 70000000
+    needed_space = 30000000
+    unused_space = total_space - folder_sizes['root']
+    print(min([size for size in folder_sizes.values()  if unused_space + size >= needed_space]))
 
 
 if __name__ == '__main__':

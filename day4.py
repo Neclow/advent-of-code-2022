@@ -1,9 +1,15 @@
 """Day 4 of AoC."""
 import re
 
-def main():
-    """Day 4 of AoC."""
-    with open('input/day4.txt', 'r', encoding='utf-8') as input_file:
+def main(file_path):
+    """Main script for day 4.
+
+    Parameters
+    ----------
+    file_path : str
+        Path to input file
+    """
+    with open(file_path, 'r', encoding='utf-8') as input_file:
         pairs = input_file.read()[:-1].split('\n')
 
     # Part 1
@@ -28,4 +34,4 @@ def main():
     print(overlapping_pairs)
 
 if __name__ == '__main__':
-    main()
+    main('input/day4.txt')
