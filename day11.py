@@ -42,7 +42,7 @@ def split(sequence, sep):
     yield chunk
 
 def update(monkey_dict, monkey_id, worry_inputs, operation, divider, true_id, false_id, relief_factor, divider_prod=None):
-    """_summary_
+    """Update the monkey business
 
     Parameters
     ----------
